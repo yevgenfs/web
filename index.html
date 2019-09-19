@@ -1,166 +1,180 @@
 <!DOCTYPE html>
-	<html>
-		<head>
-			<meta charset="utf-8"></meta>
+<html>
+	<head>
+		<meta charset="utf-8"></meta>
+		<title>Second Lab Surkov</title>
+		<style type="text/css"> 
+			body{
+			background-color: black;
+		}
+		p {
+			color: white;
+			margin-top:3%; 
+				margin-left: 20%;
+				margin-right: 20%;
+				margin-bottom:3%; 
+				font-family: sans-serif;
+		}
+		h1{
+			color: white;
+			font-family: sans-serif;
+
+		}
+		h2{
+			color: white;
+			font-family: sans-serif;
 			
-			<title>Surkov 1 lab 7 version</title>
-			<style >
-				html{
-				margin: 10%;
+		}
+			.menu {
+					list-style-type: none;
+					padding-left: 500px;
+					margin-left: 0;
+					position: relative;
+
 
 				}
-				a{
+			.menu a {
+                      
+					  text-decoration: none;
+					  font-family: sans-serif;
+					  color: white;
+					  display: inline-block;
+					  padding: 10px 20px 10px 20px;
+					  background-color: black;
+					  
+					 
+					}
+					.menu a:hover{
+						background: #666;
+					}
+			.menu li {
+					display: inline;
+					  margin-right: -5px;
+				}
 
+				.menu li ul {
+					position: absolute;
+					width:160px;
+					display: none;
+					padding-left: 453px;
+
+				}
+
+				.menu li:hover  ul{
+					display: block;
+
+
+				}
+				#logo{
+					width: 300px;
+					height: 38.5px ;
+					background-color: black;
 					
-					text-decoration: none; 
-    				border-bottom: 1px dashed #FF3333;
-    				color: red;
-   				}
+				}
+				header {
+
+					background-color: black;
+					
+				}
+				#big_bord {
+					margin-top:  -5px;
+					width: 100%;
+					
+				}
+				.photos{
+					width: 300px;
+					hyphens: 300px;
+					padding: 10px 20px;
+					
+					padding-left: 130px;
+					margin-left: 10px;
+
+
+
+				}
 				
 				
-				p{
-					font-size: 120%;
+				.sign{
+					color: white;
+				}
+				figure {
+					  float: left;
+					  width: 28%;
+					  text-align: center;
+					  font-style: sans-serif;
+					  
+					  
+					 margin: 0.5em;
+					  padding: 0.5em;
+					}
+					figcaption{
+						text-align: center;
+						padding-left: 150px;
+					}
+					footer{
+						margin-top:  500px;
+						align
+					}
+				
+				nav {
+
 				}
 
-			</style>
-		</head>
+		</style> 
+	</head>
+	<body>
+		<header>
+			<img src="src\allogos.net-2957183c-ec4d-4138-a193-0c7ec3fa1088.png" align="left" id="logo">
+			<div name="menus">
+			<nav>
+	    			<ul class="menu" >
+	    				<li><a href="">Main</a></li>
+	    				<li><a href="">News</a></li>
+	    				<li><a href="">For fans</a>
+	    					<ul >
+	    						<li><a href="" style="width:100px;">Fun club </a></li>	
+	    						<li><a href=""style="width:100px;">Tour schedule</a></li>
+	    						<li><a href=""style="width:100px;">Lyrics</a></li>
 
-		<body>
-	     	<nav>
-	     		<p>You are here:<a href="">Home</a>&#9658;<a href="">Dive Into HTML5</a>&#9658;</p>
-	     	</nav>
- 			<HEADER>
- 				<h1 style="text-align: center">
- 					№11
- 					<br>MANIPULATING HISTORY 
- 					<br>FOR FUN & PROFIT
- 				</h1>
- 				<p style="text-align: center"><a  href="">show table of contents</a></p>
- 				<p align=" center" style="transform: rotate(180deg)">&#9753;</p>
+	    					</ul>
+	    				</li>
+	    				<a href="">Fans appeal</a></li>
+	    				<li><a href="">Concert Venue</a></li>
+	    				<li><a href="">Admin</a></li>
 
- 			</HEADER>
- 			
- 			
- 			<main>
- 				
- 				<section>
- 					<h2 style="text-align: center">DIVING IN</h2>
- 					<p>he browser location bar is perhaps the geekiest mainstream piece of user interface in the world. There are URLs on billboards, on the sides of trains, and even in street graffiti. Combined with the back button — easily the most important button in the browser — you have a powerful way to go forward and backward through the vast set of intertwingled resources called the Web.</p>
- 					<br>
- 					<p>The <a href="">HTML5 history API</a>  is a standardized way to manipulate the browser history via script. Part of this API — navigating the history — has been available in previous versions of HTML. The new parts in HTML5 include a way to add entries to the browser history, to visibly change the URL in the browser location bar (without triggering a page refresh), and an event that fires when those entries are removed from the stack by the user pressing the browser’s back button. This means that the URL in the browser location bar can continue to do its job as a unique identifier for the current resource, even in script-heavy applications that don’t ever perform a full page refresh.</p>	
- 					<p align=" center" style="transform: rotate(180deg)">&#9753;</p>
 
- 				</section>
- 				<section>
- 					<h2 style="text-align: center">THE WHY</h2>
- 					<div name="">
- 						<img src="src\openclipart.org_johnny_automatic_demon_reading_Stewart_Orr.png" align="left">
- 					<p>Why would you manually manipulate the browser location? After all, a simple link can navigate to a new URL; that’s the way the web has worked for 20 years. And it will continue to work that way. This API doesn’t try to subvert the web. Just the opposite. In recent years, web developers have found new and exciting ways of subverting the web without any help from emerging standards. The HTML5 history API is actually designed to ensure that URLs continue to be useful in script-heavy web applications.</p>	
- 					<br>
- 					<p>Going back to first principles, what does a URL do? It identifies a unique resource. You can link to it directly; you can bookmark it; search engines can index it; you can copy and paste it and email it to someone else, who can click it and end up seeing the same resource you saw originally. These are all excellent qualities. URLs matter.</p>
- 					</div>
- 					<br>
- 					<p>So we want unique resources to have unique URLs. But at the same time, browsers have always had a fundamental limitation: if you change the URL, even through script, it triggers a roundtrip to the remote web server and a full page refresh. This takes time and resources, and it seems especially wasteful when you are navigating to a page that is substantially similar to the current page. Everything on the new page gets downloaded, even the parts that are exactly the same as the current page. There is no way tell a browser to change the URL but only download half a page.</p>
- 					<br>
- 					<img src="src\openclipart.org_johnny_automatic_card_trick.png" align="right">
- 					<p>The HTML5 history API lets you do this. Instead of triggering a full page refresh, you can use script to, in essence, download half a page. This illusion is tricky to pull off, and it requires some work on your part. Are you watching closely?</p>
- 					<br>
- 					<p>Let’s say you have two pages, page A and page B. The two pages are 90% identical; only 10% of the page content is different. The user navigates to page A, then tries to navigate to page B. But instead of triggering a full page refresh, you interrupt this navigation and do the following steps manually:</p>
- 					<br>
- 					
- 					<ol>
- 						<li>Load the 10% of the page from page B that is different from page A (probably using XMLHttpRequest). This will require some server-side changes to your web application. You will need to write code to return just the 10% of page B that is different from page A. This can be a hidden URL or query parameter that the end user would not normally see.</li>
- 						<li>Swap in the changed content (using innerHTML or other DOM methods). You may also need to reset any event handlers on elements within the swapped-in content.</li>
- 						<li>Update the browser location bar with the URL of page B, using a particular method from the HTML5 history API that I’ll show you in a moment.</li>
- 					</ol>
- 					<p>At the end of this illusion (if you executed it correctly), the browser ends up with a DOM that is identical to page B, just as if you had navigated to page B directly. The browser location bar ends up with a URL that is identical to page B, just as if you had navigated to page B directly. But you never really did navigate to page B, and you never did a full page refresh. That’s the illusion. But because the “compiled” page looks the same as page B and has the same URL as page B, the user should never notice the difference (nor appreciate all your hard work micromanaging their experience).</p>
- 					<p align=" center" style="transform: rotate(180deg)">&#9753;</p>
- 					</section>
- 					<section>
- 						<h2 align="center ss">THE HOW</h2>
- 						<p>The HTML5 history API is just a handful of methods on the window.history object, plus one event on the window object. You can use these to <a href="">detect support for the history API</a> . Support is currently limited to the very latest versions of a few browsers, putting these techniques squarely in the “progressive enhancement” camp.</p>
- 					 	 <table border="0" ,align=" center", width="80%"	>
- 							<th>
- 								<caption>
- 							HISTORY.PUSHSTATE SUPPORT
- 							</caption>
- 							</th>
- 							<tr align=" center">
-								<td>IE</td>
-								<td>FIREFOX</td>
-								<td>SAFARI</td>
-								<td>CHROME</td>
-								<td>OPERA</td>
-								<td>IPHONE</td>
-								<td>ANDROID</td>	
-							</tr>
- 							<tr align=" center">
- 								<td>.</td>
-								<td>4.0+</td>
-								<td>5.0+</td>
-								<td>8.0+</td>
-								<td>11.50+</td>
-								<td>4.2.1+</td>
-								<td>.</td>
-							</tr>
- 					</table>
- 					<p><a href="">dive into dogs</a>is a straightforward but non-trivial example of using the HTML5 history API. It demonstrates a common pattern: a long article with an associated inline photo gallery. In a supported browser, navigating the Next and Previous links in the photo gallery will update the photo in place and update the URL in the browser location bar, without triggering a full page refresh. In unsupported browsers — or, indeed, supported browsers where the user has disabled scripting — the links simply function as regular links, taking you to a new page with a full page refresh.</p>
- 					<br>
- 					<p>Let’s dig into the <a href="">dive into dogs</a>demo and see how it works. This is the relevant markup for a single photo:</p>
- 					<br>
- 					<h3>The pledge</h3>
- 					 <pre>
- 					 	<code>
- 	&lt;aside id="gallery"&gt;
-  &lt;p class="photonav"&gt;
-    &lt;a id="photonext" href="casey.html">Next &gt;&lt;/a&gt;
-    &lt;a id="photoprev" href="adagio.html">&lt; Previous&lt;/a&gt;
-  &lt;/p&gt;
-  &lt;figure id="photo"&gt;
-    &lt;img id="photoimg" src="gallery/1972-fer-500.jpg"
-            alt="Fer" width="500" height="375"&gt;
-    &lt;igcaption>Fer, 1972&lt;/figcaption>
-  &lt;/figure&gt;
-&lt;/aside&gt;
- 					</code>
+	    			</ul>
+	    	</nav>
+	    	</div>
+		</header>
+		<main>
+			<img src="src\NatVid_desktop.jpg  "id="big_bord"	>
+			<h1 align="center">About group</h1>
+			<p>Imagine Dragons — американський інді-рок-гурт, утворений у 2008 році у Лас-Вегасі, штат Невада. До складу колективу входять вокаліст Ден Рейнольдс, гітарист Вейн Сермон, басист та клавішник Бен МакКі і Ден Платцман на ударних. Перша хвиля успіху досягла Imagine Dragons після релізу синглу «It's Time», який передував виходу дебютної студійної платівки «Night Visions». Американський журнал «Billboard» назвав їх найяскравішими новими зірками 2013 року, а журнал «Rolling Stone» назвали їх сингл «Radioactive» найбільшим рок-хітом року. Другий студійний альбом «Smoke + Mirrors» очолив чарти у США, Канаді та Великій Британії[1]. Після короткої перерви гурт представив третю платівку «Evolve» у 2017 році, два сингли із якої — «Believer» і «Thunder» — очолили чарти. Незважаючи на комерційний успіх усіх альбомів, гурт отримує змішані відгуки від критиків.</p>
+			<h2 align="center">Best album</h2>
+			<div name="photos">
+				<figure class="sign">
+				<img src="src\screen-shot-2015-02-10-at-11-17-38-pm.png" class="photos"alt="Smoke+Mirrors">
+				<figcaption align="center">Smoke+Mirorrs</figcaption>
+  </figure>
+			<figure class="sign">
+				<img src="src\23780f5706a730badff9b61769261b04.jpg"class="photos"alt="Naturale">
+						<figcaption align="center">Natural</figcaption>
+  </figure>
+				
+				<figure class="sign">
+				<img src="src\0lb5wdxndih01.jpg"class="photos" alt="Next to me">
+						<figcaption align="center">Next to me</figcaption>
+  </figure>
+			</div>
 
- 				</pre>> 
- 					<p align=" center" style="transform: rotate(180deg)">&#9753;</p>
- 				</section>
- 				<section>
- 					<h2 align="center">FURTHER READING</h2>
- 					<ul>
- 						<li><p><a href="">Session history and navigation</a>in the HTML5 draft standard</p></li>
- 						<li><p><a href="">Manipulating the browser history </a>Mon Mozilla Developer Center</p></li>
- 						<li><p><a href="">Simple history API demo</a></p></li>
- 						<li><p><a href="">20 Things I Learned About Browsers and the Web</a>, an advanced demo that uses the history API and other HTML5 techniques</p></li>
- 						<li><p><a href="">Using HTML5 today</a>describes <a href="">Facebook’s</a>use of the history API</p></li>
- 						<li><p><a href="">The Tree Slider</a>describes <a href="">Github’s</a>use of the history API</p></li>
- 						<li><p> <a href=""></a>History.js <a href=""></a>, a meta-API for manipulating history in both newer and older browsers</p></li>
- 					</ul>
- 					<p align=" center" style="transform: rotate(180deg)">&#9753;</p>
- 				</section>
- 				<section>
- 					<p>This has been “Manipulating History for Fun & Profit.” <a href="">The full table of contents</a> has more if you’d like to keep reading.</p>
- 					<table border="1px" style="border-collapse: collapse;" >
- 						<th bgcolor="black" style="color: white"><caption align="left">DID YOU KNOW?</caption></th>
- 						<tr>
- 							<td> <img src="src\openclipart.org_johnny_automatic_bag_of_money (2).png" align="right">
- 								<p>In association with Google Press, O’Reilly is distributing this book in a variety of formats, including paper, ePub, Mobi, and DRM-free PDF. The paid edition is called “HTML5: Up & Running,” and it is available now. This chapter is not yet included in the paid edition, so consider it a bonus.</p>	
- 								,<br>
+		</main>
+		<footer>
+			<p align="center" >
+© 2019 INTERSCOPE RECORDS PRIVACY POLICY TERMS & CONDITIONS WHY MUSIC MATTERS
+</p>
 
-								<p>If you liked this chapter and want to show your appreciation, you can <a href="">buy “HTML5: Up & Running” with this affiliate link</a> or <a href="">buy an electronic edition directly from O’Reilly</a>. You’ll get a book, and I’ll get a buck. I do not currently accept direct donations.</p>
- 							</td>
- 						</tr>
- 					</table>
- 				</section>
- 				<footer>
- 					<p align="center">Copyright MMIX–MMXI Mark Pilgrim</p>
- 					<p align="center"><input type="text" name="powered by Googles"> <button style="size: 40 ">search</button></p>
- 				</footer>
+		</footer>
 
- 			</main>
-            
-		</body>
-	</html>
-	
+	</body>
+</html>
