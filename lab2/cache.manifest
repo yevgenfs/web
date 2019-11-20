@@ -1,0 +1,25 @@
+CACHE MANIFEST
+# Версия 1
+
+
+
+CACHE:
+index.html
+src\allogos.net-2957183c-ec4d-4138-a193-0c7ec3fa1088.png
+src\NatVid_desktop.jpg
+src\screen-shot-2015-02-10-at-11-17-38-pm.png
+src\23780f5706a730badff9b61769261b04.jpg
+src\0lb5wdxndih01.jpg
+TOURSHCEDULE.html
+FANSAPPEAL.html
+admin.html
+
+
+
+NETWORK:
+*
+
+FALLBACK:
+CONCERTVENUE.html error.html
+news.html error.html
+
